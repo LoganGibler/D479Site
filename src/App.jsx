@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "./App.css";
+import { Header } from "./components";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <h1>Hello new Project!</h1>
-    </>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Header />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
 }
 
