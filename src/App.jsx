@@ -8,6 +8,7 @@ import {
   Transportation,
   Activities,
   Lodging,
+  Sources,
 } from "./components";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
@@ -26,9 +27,8 @@ function App() {
           <Route path="/" element={[<Header key="header" />, <Home />]}></Route>
           <Route path="/Transportation" element={<Transportation />}></Route>
           <Route path="/Activities" element={<Activities />}></Route>
-          <Route path="/Lodging" element={<Lodging />}>
-            {" "}
-          </Route>
+          <Route path="/Lodging" element={<Lodging />}></Route>
+          <Route path="/Sources" element={<Sources />}></Route>
         </Routes>
         <Footer setActiveLink={setActiveLink} />
       </BrowserRouter>

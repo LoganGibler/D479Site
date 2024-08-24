@@ -64,7 +64,15 @@ const Footer = ({ setActiveLink }) => {
           {" "}
           <p className="absolute bottom-0 pb-1 text-slate-200">
             © 2024 Taniti Island Tourism. All Rights Reserved. Created by Logan
-            Gibler.
+            Gibler. View Image sources{" "}
+            <a
+              className="font-bold text-blue-500 hover:cursor-pointer"
+              onClick={() => {
+                navigate("/Sources");
+              }}
+            >
+              Here
+            </a>
           </p>
         </div>
       </div>
